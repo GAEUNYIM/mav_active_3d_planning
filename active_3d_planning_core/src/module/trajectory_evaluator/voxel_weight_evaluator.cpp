@@ -15,7 +15,7 @@ VoxelWeightEvaluator::VoxelWeightEvaluator(PlannerI& planner)
 void VoxelWeightEvaluator::setupFromParamMap(Module::ParamMap* param_map) {
   FrontierEvaluator::setupFromParamMap(param_map);
   setParam<double>(param_map, "frontier_voxel_weight",
-                   &p_frontier_voxel_weight_, 1.0);
+                   &p_frontier_voxel_weight_, 1.0);//1.0
   setParam<double>(param_map, "min_impact_factor", &p_min_impact_factor_, 0.0);
   setParam<double>(param_map, "new_voxel_weight", &p_new_voxel_weight_, 0.01);
   setParam<double>(param_map, "ray_angle_x", &p_ray_angle_x_, 0.0025);

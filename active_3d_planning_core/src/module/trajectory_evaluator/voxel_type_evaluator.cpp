@@ -21,14 +21,14 @@ void VoxelTypeEvaluator::setupFromParamMap(Module::ParamMap* param_map) {
   SimulatedSensorEvaluator::setupFromParamMap(param_map);
 
   // params
-  setParam<double>(param_map, "gain_unknown", &p_gain_unknown_, 1.0);
-  setParam<double>(param_map, "gain_occupied", &p_gain_occupied_, 0.0);
-  setParam<double>(param_map, "gain_free", &p_gain_free_, 0.0);
+  setParam<double>(param_map, "gain_unknown", &p_gain_unknown_, 1.0); //1.0
+  setParam<double>(param_map, "gain_occupied", &p_gain_occupied_, 0.0); //0.0
+  setParam<double>(param_map, "gain_free", &p_gain_free_, 0.0); //0.0
   setParam<double>(param_map, "gain_unknown_outer", &p_gain_unknown_outer_,
-                   0.0);
+                   0.0);  //0.0
   setParam<double>(param_map, "gain_occupied_outer", &p_gain_occupied_outer_,
-                   0.0);
-  setParam<double>(param_map, "gain_free_outer", &p_gain_free_outer_, 0.0);
+                   0.0);  //0.0
+  setParam<double>(param_map, "gain_free_outer", &p_gain_free_outer_, 0.0); //0.0
 
   // setup map
   map_ = dynamic_cast<map::OccupancyMap*>(&(planner_.getMap()));

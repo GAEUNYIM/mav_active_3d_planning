@@ -35,7 +35,7 @@
   <arg name="experiment_config" default="CityBuilding.yaml"/>
   <arg name="record_data" default="true"/>
   <arg name="record_visualization" default="true"/>
-  <arg name="data_directory" default="/home/user/Documents/Data"/> 
+  <arg name="data_directory" default="/home/ma3p_logdir"/> 
   <arg name="data_frequency" default="30.0" />
   <arg name="time_limit" default="30" />
 
